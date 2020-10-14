@@ -39,3 +39,24 @@
 #page-map aside footer strong{
     font-weight: 800;
 }
+
+#page-map .create-orphanage {
+    position: absolute;
+
+    right: 40px;
+    bottom: 40px;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background: #15c3d6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+#page-map .create-orphanage:hover {
+    background: #17d6eb;
+}
