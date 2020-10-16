@@ -72,12 +72,14 @@ export default {
             })
             ),
         })
+
+        const finalData =  Schema.cast(data);
     
         await Schema.validate(data, {
             abortEarly: false
         });
 
-        const orphanage = orphanageRepo.create(data);
+        const orphanage = orphanageRepo.create(finalData);
     
         await orphanageRepo.save(orphanage);
         
