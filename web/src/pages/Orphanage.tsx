@@ -39,7 +39,6 @@ export default function Orphanage() {
   useEffect(() => {
       api.get(`orphanages/${params.id}`).then(response => {
           setOrphanage(response.data);
-          console.log(response.data.open_on_weekends)
       })
   }, [params.id]);
 
